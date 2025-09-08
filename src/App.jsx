@@ -1,11 +1,11 @@
-import AddTransaction from "./AddTransaction"
 import './App.css'
+import TransactionPage from "./TransactionPage"
 function App() {
 
   return (
     <>
       <h1>Expense Tracker</h1>
-      <AddTransaction/>
+      <TransactionPage/>
     </>
   )
 }
