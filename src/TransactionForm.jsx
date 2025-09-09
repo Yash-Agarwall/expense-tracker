@@ -35,7 +35,7 @@ export default function TransactionForm({ initialValues, onSubmit }) {
       //these below entries will override their previous entries
       amount: signedAmount,
       id: formData.id || Date.now(),
-      date: formData.date || new Date().toLocaleString(),
+      date: formData.date || new Date().toLocaleDateString(),
     });
   };
 
