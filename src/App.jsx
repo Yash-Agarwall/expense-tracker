@@ -1,4 +1,4 @@
-import './App.css'
+
 import TransactionPage from "./TransactionPage"
 function App() {
 

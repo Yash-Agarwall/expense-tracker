@@ -35,12 +35,12 @@ function TransactionItem({ transaction, onDelete, onEdit }) {
             onDelete(transaction.id);
           }}
         >
-          ✕
+          <span className="material-symbols-outlined">delete</span>
         </button>
         <button onClick={(e)=>{  
             e.stopPropagation();                     
             onEdit(transaction)
-        }}>Edit</button>
+        }}><span className="material-symbols-outlined">edit</span></button>
       </div>
       {showDetails && (
         <div>
