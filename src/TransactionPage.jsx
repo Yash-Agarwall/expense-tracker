@@ -2,6 +2,7 @@ import { use, useEffect, useState } from "react";
 import TransactionForm from "./TransactionForm";
 import TransactionList from "./TransactionList";
 import "./TransactionPage.css";
+import ExpensePieChart from "./ExpensePieChart";
 
 export default function TransactionPage() {
   let [transactions, setTransactions] = useState(() => {
@@ -126,6 +127,7 @@ export default function TransactionPage() {
           onDelete={handleDelete}
           onEdit={handleEdit}
         />
+        <ExpensePieChart transactions={transactions}/>
       </div>
     </div>
   );
