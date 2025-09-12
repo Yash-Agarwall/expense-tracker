@@ -80,6 +80,7 @@ export default function TransactionPage() {
             type: "expense",
             id: "",
             date: "",
+            category: "other"
           }
         }
         onSubmit={(transaction) => {
@@ -95,7 +96,9 @@ export default function TransactionPage() {
       />
       <div className="transaction-container">
         <div className="controls">
-          <label htmlFor="filter"><span class="material-symbols-outlined">tune</span></label>
+          <label htmlFor="filter"><span className="material-symbols-outlined">tune 
+            
+            </span></label>
           <select
             name="filter"
             id="filter"

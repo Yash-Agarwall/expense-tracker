@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-
 export default function TransactionForm({ initialValues, onSubmit }) {
   let [formData, setformData] = useState(initialValues);
 
@@ -71,7 +70,21 @@ export default function TransactionForm({ initialValues, onSubmit }) {
           onChange={handleChange}
         />
         <br />
-
+        <label htmlFor="category">Category: </label>
+        <select
+          name="category"
+          id="category"
+          onChange={handleChange}
+          value={formData.category}
+        >
+          <option value="food">Food</option>
+          <option value="grocery">Grocery</option>
+          <option value="shopping">Shopping</option>
+          <option value="travel">Travel</option>
+          <option value="bills">Bills</option>
+          <option value="other">Other</option>
+        </select>
+        <br />
         <label htmlFor="desc">Expense Description: </label>
         <input
           type="text"

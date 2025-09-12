@@ -27,7 +27,7 @@ function TransactionItem({ transaction, onDelete, onEdit }) {
   return (
     <li onClick={() => setShowDetails((prev) => !prev)}>
       <div>
-        <span>{transaction.name}</span>
+        <span>{transaction.name}-{transaction.category}</span>
         <span>₹{transaction.amount}</span>
         <button
           onClick={(e) => {
@@ -48,12 +48,15 @@ function TransactionItem({ transaction, onDelete, onEdit }) {
             <b>Date:</b> {transaction.date}
           </p>
           <p>
-            <b>Category: </b>
+            <b>Type: </b>
             {transaction.type}
           </p>
           <p>
             <b>Description: </b>
             {transaction.description}
+          </p>
+          <p>
+            <b>Category:</b> {transaction.category}
           </p>
         </div>
       )}
